@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1%;
+}
+
+body {
+  background-color: #3d3838;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.flex-container {
+  display: flex;
+  width: 400vw;
+  height: 80vh;
+}
+
+.img-content {
+  width: 25%;
+  height: 85%;
+  padding: 20px;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.img-container p {
+  margin-top: 2%;
+}
+
+.input-container {
+  margin-left: 86%;
+}
+
+.img-container img {
+  width: 100%;
+  max-height: 100%;
+}
+
+#point1:checked~.flex-container .move1 {
+  transform: translate(0);
+}
+
+#point1:checked~.flex-container .move2 {
+  transform: translate(100%, 0);
+}
+
+#point1:checked~.flex-container .move3 {
+  transform: translate(200%, 0);
+}
+
+#point1:checked~.flex-container .move4 {
+  transform: translate(300%, 0);
+}
+
+#point2:checked~.flex-container .move1 {
+  transform: translate(calc(-100% - 40px), 0);
+}
+
+#point2:checked~.flex-container .move2 {
+  transform: translate(calc(-100% - 40px), 0);
+}
+
+#point2:checked~.flex-container .move3 {
+  transform: translate(calc(-100% - 40px), 0);
+}
+
+#point2:checked~.flex-container .move4 {
+  transform: translate(calc(-100% - 40px), 0);
+}
+
+
+#point3:checked~.flex-container .move1 {
+  transform: translate(calc(-200% - 80px), 0);
+}
+
+#point3:checked~.flex-container .move2 {
+  transform: translate(calc(-200% - 80px), 0);
+}
+
+#point3:checked~.flex-container .move3 {
+  transform: translate(calc(-200% - 80px), 0);
+}
+
+#point3:checked~.flex-container .move4 {
+  transform: translate(calc(-200% - 80px), 0);
+}
+
+
+#point4:checked~.flex-container .move1 {
+  transform: translate(calc(-300% - 120px), 0);
+}
+
+#point4:checked~.flex-container .move2 {
+  transform: translate(calc(-300% - 120px), 0);
+}
+
+#point4:checked~.flex-container .move3 {
+  transform: translate(calc(-300% - 120px), 0);
+}
+
+#point4:checked~.flex-container .move4 {
+  transform: translate(calc(-300% - 120px), 0);
+}
+
+#point1 {
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+}
+
+#point2 {
+  position: absolute;
+  display: inline-block;
+  bottom: 20%;
+  right: 4%;
+  margin-left: 5px;
+}
+
+#point3 {
+  position: absolute;
+  display: inline-block;
+  bottom: 20%;
+  right: 3%;
+  margin-left: 5px;
+}
+
+#point4 {
+  position: absolute;
+  display: inline-block;
+  bottom: 20%;
+  right: 2%;
+  margin-left: 5px;
+}
